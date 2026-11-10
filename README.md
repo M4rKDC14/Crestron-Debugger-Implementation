@@ -64,7 +64,7 @@ then one record per signal:
 A signal inside a module is stored as `::<name>:<path>.<number as 8 hex digits>`, for example
 `::level_fb:S-5.1.0000012A`.
 
-On a 4-Series processor the file sits in the program slot's folder over SFTP: `Program01` for slot 1, and so on.
+On a 3-Series DIN-AP3 the file sits in the program slot's folder over SFTP: `Program01` for slot 1, and so on.
 
 ## The console protocol
 
@@ -108,8 +108,9 @@ done, and release any digital you set high.
 
 ## Tested on
 
-The protocol was taken from a capture of Toolbox talking to a 4-Series processor, and used live against a 4-Series
-DIN-AP3 (program slot 1, about 1,400 signals traced). Other models and 3-Series processors have not been tried.
+The protocol was taken from a capture of Toolbox's SIMPL Debugger and the processor's own console help, and used live
+against a 3-Series DIN-AP3 (program slot 1, about 1,400 signals traced). Other models and 4-Series processors have not
+been tried.
 
 ## License
 
